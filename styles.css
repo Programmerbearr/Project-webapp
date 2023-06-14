@@ -1,0 +1,368 @@
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+  background-color:#d1c4e9  !important; /* Update the color to a premium shade */
+  color: #7c4dff !important; /* Set text color to white for contrast */
+  padding: 5px; /* Add padding for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.navbar-brand {
+  font-size: 24px; /* Adjust the font size for a modern look */
+  font-weight: bold; /* Make the brand text bold */
+}
+
+.nav-link {
+  font-size: 18px; /* Adjust the font size for menu links */
+  margin-right: 10px; /* Add some spacing between menu items */
+  text-transform: uppercase; /* Convert menu item text to uppercase */
+}
+
+.nav-link:hover {
+  color: #eee; /* Change the link color on hover */
+}
+
+
+/* Search bar */
+.search-container {
+  margin-bottom: 0px;
+  color: #ffffff;
+  padding: 2rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input {
+  padding: 10px;
+  max-width: 400px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to right, #13a1da, #550d0d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  transition: width 0.3s ease;
+  caret-color: auto; /* Add this line to use the default cursor color */
+  cursor: text; /* Add this line to set the cursor */
+}
+
+.search-container input:focus {
+  outline: none;
+  color: #264653;
+  max-width: 600px; /* Set a maximum width for the input field */
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #264653;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.search-container button:hover {
+  background-color: #0d2c35;
+}
+
+.search-container input::placeholder {
+  color: #9575cd;
+  font-size: 18px;
+}
+
+.magnifying-glass-icon {
+  width: 46px;
+  height: 16px;
+  margin-right: 15px;
+}
+
+
+/* Footer */
+html, body {
+  height: 118%;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7c4dff;
+  padding: 40px 0;
+  color:#e48bae;
+}
+
+body {
+  margin-bottom: 11rem;
+}
+
+
+.footer .container {
+  text-align: center;
+}
+
+.footer .row {
+  margin-bottom: 15px;
+}
+
+.footer .col {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer .col span {
+  pointer-events: none;
+}
+
+.footer a {
+  color: black;
+  text-decoration: solid;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.bottom-footer {
+  text-align: center;
+  padding-top: 20px;
+  color:#e48bae;
+}
+
+
+body {
+  margin-bottom: 11rem; /* Add margin bottom equal to the footer height */
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 10%;
+  left: 30px;
+  width: 314px;
+  height: 362px;
+  z-index: 999; /* Ensure the toggle button is above other elements */
+}
+
+.dark-mode-toggle input {
+  display: none;
+}
+
+.dark-mode-toggle label {
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle input:checked + label::after {
+  transform: translateX(20px);
+}
+
+.dark-mode {
+  background-color: #9575cd;
+  color: #fff !important;
+  transition: background-color 0.7s ease, color 1.3s ease;
+}
+
+/* Add a subtle gradient to the background */
+.dark-mode::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.dark-mode.active::before {
+  opacity: 1;
+}
+
+.dark-mode #weather {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .weather-details .weather-item {
+  background-color: #555;
+  color: #fff;
+}
+
+#weather {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #9575cd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 18px;
+  color: #fff; /* Change the text color to white */
+}
+
+.weather-info {
+  font-size: 124px;
+  font-weight: bold;
+  color: #fff!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Apply a smooth transition to the background gradient */
+.dark-mode::before {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.dark-mode.active::before {
+  opacity: 1
+}
+
+
+.city-name {
+  color: #d1c4e9;
+  padding: 12px;
+  height: 120px;
+  font-size: 90px;
+  text-align: left; /* Add this line to align the text to the left */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+}
+#cityInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#suggestionList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #d1c4e9;
+  border: 1px solid #ccc;
+  color: #000;
+  border-top: none;
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%; /* Occupy the full width of the parent element */
+  top: calc(100% + 2px); /* Position it right below the search input */
+  transform: translateX(-50%); /* Center the suggestion list horizontally */
+  left: 50%; /* Align with the horizontal center of the search input */
+  z-index: 999; /* Ensure the suggestion list appears above other elements if necessary */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  text-align: center;
+}
+#suggestionList li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+#suggestionList li:hover {
+  background-color: #e04848;
+}
+.temperature-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+.temperature {
+  font-size: 68px;
+  font-weight: bold;
+  color: #e1e506;
+  margin-right: 5px;
+}
+
+.temperature-unit {
+  font-size: 124px;
+  color: rgb(255, 0, 0);
+}
+.weather-description {
+  height: 90px;
+  font-size: 40px;
+}
+
+
+/* Styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  .search-container input {
+    width: 100%; /* Adjust the width to occupy full width */
+  }
+
+  .search-container button {
+    margin-top: 10px; /* Add some spacing below the input */
+  }
+
+  .dark-mode-toggle {
+    bottom: 20px; /* Increase the distance from the bottom */
+    left: 20px; /* Adjust the position from the left */
+  }
+
+  .weather-container {
+    padding: 40px; /* Increase the padding for more spacing */
+  }
+
+}
+
+/* Styles for screens up to 480px wide */
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 18px; /* Reduce the font size */
+  }
+
+  .search-container input {
+    width: 100%; /* Adjust the width to occupy full width */
+    font-size: 16px; /* Reduce the font size */
+  }
+
+  .search-container button {
+    font-size: 16px; /* Reduce the font size */
+  }
+
+
+}

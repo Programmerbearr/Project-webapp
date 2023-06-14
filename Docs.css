@@ -1,0 +1,164 @@
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+}
+
+hr {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  height: 2px;
+  border: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+  background-color: #264653 !important;
+  color: #e48bae  !important;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: black !important;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  color: #9575cd;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #eee;
+}
+
+.collapse {
+  display: none;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #e48bae;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #9575cd;
+  padding: 40px 0;
+  position: relative;
+  transform: none; /* Remove translateY property */
+  margin-top: 100px; /* Adjust the margin-top value as needed */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: transform 1.3s ease;
+  z-index: 1; /* Add this line to ensure the footer is positioned on top of other elements */
+}
+
+.footer .container {
+
+  text-align: center;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 0px 0rem;
+}
+
+.footer .col {
+  flex: 0 0 10%;
+  margin-right: 2px; /* Adjust the margin as desired */
+}
+
+.footer a {
+  text-decoration: none;
+  color: 	black !important;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.footer .bottom-footer {
+  margin-top: 20px;
+  text-align: center;
+  color: 	black;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20%;
+  left: 30px;
+  width: 314px;
+  height: 12px;
+  margin-bottom: 100px;
+}
+
+.dark-mode-toggle input {
+  display: none;
+}
+
+.dark-mode-toggle label {
+  display: inline-block
+}
